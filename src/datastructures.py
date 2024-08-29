@@ -58,7 +58,7 @@ class FamilyStructure:
         for index in range(len(self._members)):
             if self._members[index]["id"] == id:
                 self._members.pop(index)
-                return self._members
+                return None
 
     def get_member(self, id):
         for item in self._members:
